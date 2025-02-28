@@ -13,12 +13,6 @@ git clone https://github.com/Genentech/gReLU.git
 cd gReLU
 pip install .
 ```
-
-To install using pip:
-
-```shell
-pip install gReLU
-```
 Typical installation time including all dependencies is under 10 minutes.
 
 To train or use transformer models containing flash attention layers, [flash-attn](https://github.com/Dao-AILab/flash-attention) needs to be installed first:
@@ -28,7 +22,14 @@ pip install torch ninja
 pip install flash-attn --no-build-isolation
 pip install gReLU
 ```
-
+the following needs to be installed separately
+```
+conda install -c conda-forge python-distutils
+```
+or by pip
+```
+pip install distutils
+```
 ## Contributing
 
 This project uses [pre-commit](https://pre-commit.com/). Please make sure to install it before making any changes:
@@ -73,6 +74,7 @@ bioconda::ucsc-bedtogenepred    \
 bioconda::ucsc-gtftogenepred    \
 bioconda::ucsc-gff3togenepred
 ```
+
 
 If you want to create ATAC-seq coverage bigWig files using `grelu.data.preprocess.make_insertion_bigwig`, you will need to install bedtools. See https://bedtools.readthedocs.io/en/latest/content/installation.html for instructions.
 
