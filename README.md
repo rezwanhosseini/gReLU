@@ -22,14 +22,7 @@ pip install torch ninja
 pip install flash-attn --no-build-isolation
 pip install gReLU
 ```
-the following needs to be installed separately
-```
-conda install -c conda-forge python-distutils
-```
-or by pip
-```
-pip install distutils
-```
+
 ## Contributing
 
 This project uses [pre-commit](https://pre-commit.com/). Please make sure to install it before making any changes:
