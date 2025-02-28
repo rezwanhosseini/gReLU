@@ -67,7 +67,10 @@ bioconda::ucsc-bedtogenepred    \
 bioconda::ucsc-gtftogenepred    \
 bioconda::ucsc-gff3togenepred
 ```
-
+at the end the python interpreter will be gone for some reason! so install it again:
+```
+conda install python=3.12
+```
 
 If you want to create ATAC-seq coverage bigWig files using `grelu.data.preprocess.make_insertion_bigwig`, you will need to install bedtools. See https://bedtools.readthedocs.io/en/latest/content/installation.html for instructions.
 
